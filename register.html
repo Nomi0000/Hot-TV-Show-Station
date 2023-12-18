@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="font-[Poppins] bg-black ">
+    <header class="bg-[#131313]">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer" src="/img/logo (2).png" alt="...">
+            </div>
+            <div class="max-sm:hidden md:hidden sm:hidden lg:flex items-center">
+                <div class="-ml-10">
+                    <i class="fas fa-search ml-6 absolute mt-3 text-white"></i>
+                    <input type="text" placeholder="Search titles here"
+                        class="rounded-xl bg-black text-gray-400 border-none h-[3vw] w-[20vw] text-center text-xs outline-none" />
+                </div>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute  md:min-h-fit min-h-[60vh] max-sm:-mt-8  left-0 top-[-100%] md:w-auto  w-full flex items-center">
+                <ul
+                    class="flex md:flex-row flex-col md:items-center max-sm:w-full max-sm:border  max-sm:bg-black max-sm:text-white top-0  md:gap-[1vw] gap-4 text-gray-400 font-poppin text-xs space-x-6">
+                    <a class="cursor-pointer max-sm:ml-6 max-sm:mt-3  ">Home</a>
+                    <a class="cursor-pointer ">TV Shows</a>
+                    <a class="cursor-pointer ">Live</a>
+                    <a class="cursor-pointer ">Pedicob Streams</a>
+                    <div class="max-sm:flex space-x-3">
+                        <button
+                            class="rounded-2xl border w-[95px] md:hidden   h-[45px] text-center text-black bg-transparent border-black max-sm:border-white max-sm:my-4 max-sm:text-white flex items-center justify-center">Sign
+                            in</button>
+                        <button class="px-6 py-3 max-sm:my-4 text-white md:hidden rounded-2xl bg-[#FF0207]">
+                            Register
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="md:flex max-sm:hidden sm:hidden items-center">
+                <div>
+                    <img class="md:h-[10px]" src="/img/love 1.svg" alt="" />
+                </div>
+                <div class="md:ml-2 lg:ml-2">
+                    <h1 class="text-white text-xs cursor-pointer">Watchlist</h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="sign_in.html"
+                    class="rounded-2xl border w-[95px] max-sm:hidden sm-hidden  h-[45px] text-center text-white bg-transparent border-gray-400 flex items-center justify-center">Sign
+                    in</a>
+                <button class="px-6 py-3 text-white max-sm:hidden sm-hidden rounded-2xl bg-[#FF0207]">
+                    Register
+                </button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                    class="text-3xl cursor-pointer md:hidden fill-white"></ion-icon>
+            </div>
+    </header>
+
+    <!-- sign up div section -->
+
+    <section class="w-full bg-cover bg-center lg:p-20 md:p-10 max-sm:py-5 "  style="background-image: url('img/overlay.png');">
+        <div
+            class="flex justify-center h-[100vh] border border-gray-400 rounded-lg md:mx-auto max-sm:h-1/2 max-sm:w-[100%] sm:w-[70%] lg:p-5  bg-black lg:w-[40vw] md:w-[50vw] lg:h-[140vh] md:h-[60vw]">
+
+            <div class="flex flex-col  px-6 py-12 lg:py-1 max-w-md w-full  ">
+                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                    <p class="text-gray-400 lg:mt-4 ">Welcome!</p>
+                    <h2 class="mt-4 mb-4 text-xl text-white ">Sign up to Hot TV Station</h2>
+                    <p class="text-gray-400 text-xs ">Your Next Stop for Traveling and streaming Station</p>
+                </div>
+
+                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
+                    <form class="space-y-6" action="#" method="POST">
+                        <div class="flex max-sm:flex-col">
+                            <label class="block text-sm font-medium leading-6 text-white">First Name</label>
+                            <div class=" bg-transparent md:hidden  mt-2">
+                                <input name="email" type="email" autocomplete="email" placeholder="First Name" required
+                                    class="block w-full rounded-md border placeholder:p-2 bg-transparent py-1.5 outline-none">
+                            </div>
+                            <label class="block text-sm font-medium leading-6 md:ml-40 max-sm:hidden text-white">Last Name</label>
+                            
+                        </div>
+                        <div class="md:flex">
+                            <div class=" bg-transparent md:-mt-3 max-sm:hidden">
+                                <input name="email" type="email" autocomplete="email" placeholder="Last Name" required
+                                    class="block w-full rounded-md border placeholder:p-2 bg-transparent py-1.5 outline-none">
+                            </div>
+                            <label class="block md:hidden text-sm font-medium leading-6 md:ml-40  text-white">Last Name</label>
+                            <div class="  max-sm:mt-2 md:ml-16 md:-mt-3">
+                                <input name="email" type="email" autocomplete="email" placeholder="Last Name" required
+                                    class="block w-full bg-transparent placeholder:p-2 border rounded-md  py-1.5 outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium leading-6 text-white">Email address</label>
+                            <div class="mt-2">
+                                <input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    placeholder="Email address"
+                                    required
+                                    class="block w-full rounded-sm border text-white border-white py-1.5 placeholder:p-2 bg-transparent"
+                                >
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium leading-6 text-white">Username</label>
+                            <div class="mt-2">
+                                <input
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    placeholder="Username"
+                                    required
+                                    class="block w-full rounded-sm border text-white border-white py-1.5 placeholder:p-2 bg-transparent"
+                                >
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium leading-6 text-white">Password</label>
+                            <div class="mt-2 bg-transparent">
+                                <input name="email" type="email" autocomplete="email" placeholder="Password" required
+                                    class="block w-full rounded-md border p-2 bg-transparent py-1.5 outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <label for="password"
+                                    class="block text-sm font-medium leading-6 text-white">Confirm Password</label>
+                            </div>
+                            <div class="mt-2">
+                                <input name="password" type="password" autocomplete="current-password" placeholder="Confirm Password" required
+                                    class="block outline-none w-full rounded-md border placeholder:p-2 bg-transparent py-1.5 text-black text-sm ">
+                            </div>
+                        </div>
+                        <div class="flex  ">
+                            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="checked-checkbox-1"
+                              class="ms-2 text-xs font-medium text-gray-400  dark:text-gray-300">I agree to Hot TV Station's terms and conditions, Learn more</label>
+                          </div>
+
+                        <div>
+                            <a type="submit" href="/index.html"
+                                class="flex w-full justify-center rounded-md bg-[#ff0207] px-3 py-1.5 text-sm font-semibold leading-6 text-white">Register
+                        </a>
+                        </div>
+
+                    </form>
+
+                    <p class="mt-10 text-center text-sm text-gray-500">
+                        Already have an Account ? 
+                        <a href="/sign_in.html"
+                            class="font-semibold leading-6 text-white hover:text-white">Login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End sign up div section -->
+
+    <section class="bg-black">
+        <div class="flex md:flex-row sm:flex-col max-sm:flex-col md:mx-24">
+            <div class="flex flex-col max-sm:ml-5">
+                <img class="md:w-[8vw] w-[30vw] mt-16" src="/img/3c21decb-c927-41ee-8070-0bfd2a5ce6cc 2.png" alt="">
+                <p class="text-gray-400 text-xs mt-4">HTS is video streaming lorem ipsum dolor sit <br> amet,
+                    consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna <br>
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <p class="text-white font-bold text-sm md:mt-6 mt-6">Follow Us</p>
+                <div class="flex space-x-2 mb-24 max-sm:mb-12">
+                    <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social01.svg" alt="">
+                    <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social02.svg" alt="">
+                    <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social03.svg" alt="">
+                    <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social04.svg" alt="">
+                    <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social05.svg" alt="">
+
+                </div>
+            </div>
+            <div class="flex flex-col max-sm:ml-5 md:mt-16 space-y-3 mb-10  md:ml-24">
+                <p class="text-white  text-md">Quick Links</p>
+                <p class="text-white  text-sm">About us</p>
+                <p class="text-white  text-sm">Contact us</p>
+                <p class="text-white  text-sm">Products</p>
+                <p class="text-white  text-sm">Login</p>
+                <p class="text-white  text-sm mb-24">Sign Up</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex flex-col  space-y-3 mb-10 md:mt-16 md:ml-16">
+                    <p class="text-white  text-md">TV Show Categories +</p>
+                    <p class="text-white  text-sm">Christian Show</p>
+                    <p class="text-white  text-sm">Boxing Show</p>
+                    <p class="text-white  text-sm">Football Show</p>
+                    <p class="text-white  text-sm">All Islam</p>
+                    <p class="text-white  text-sm">Comedy Show</p>
+                    <p class="text-white  text-sm">Pop Show</p>
+                    <p class="text-white  text-sm">Jewish Show</p>
+                    <p class="text-white  text-sm mb-24">Bring 'em Home <br> Bail Bonds</p>
+                </div>
+                <div class="flex flex-col  mt-10 -ml-3 space-y-3 md:mb-12 md:mt-28 ">
+                    <p class="text-white  text-sm">Hip Hop Show</p>
+                    <p class="text-white  text-sm">Jazz Show</p>
+                    <p class="text-white  text-sm">Fishing Show</p>
+                    <p class="text-white  text-sm">Sports Show</p>
+                    <p class="text-white  text-sm">Caribbean Show</p>
+                    <p class="text-white  text-sm">Women of Wealth</p>
+                    <p class="text-white  text-sm">Pedicab</p>
+                    <p class="text-white  text-sm mb-16">Community <br> Affairs Show</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="rounded-lg bg-gradient-to-br md:mx-24 max-sm:mx-7  md:h-[13vw] md:w-[32vw] max-sm:h-[50vw]  from-pink-500     to-purple-900 mt-6 md:p-4">
+            <div class="flex flex-col max-sm:ml-4  space-y-4 ">
+                <h1 class="text-white text-sm font-poppin mt-1">Watch HTS Everywhere &  Anytime Now</h1>
+                <p class="text-white text-xs">Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed <br> do
+                    eiusmod tempor</p>
+                <button
+                    class="border bg-white text-sm text-black rounded-md md:h-[3.2vw] md:w-[14vw] w-[50vw] h-[10vw]">Get
+                    Premium Access</button>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- End Section 2 -->
+    <!-- Section 3 -->
+    <section class="bg-[#ff0207] mt-5  max-sm:h-[20vw] ">
+        <div class="md:flex max-sm:justify-center md:justify-between max-sm:flex-col">
+            <p class="text-white md:ml-24 md:mt-8 max-sm:py-3   md:text-sm text-xs max-sm:text-center  ">HTS VIDEO STREAMING - © 2020 All Rights
+                Reserved</p>
+            <p class="text-white md:mr-24 md:mt-8 max-sm:-mt-2 mb-8 max-sm:text-center md:text-sm text-xs">Website developed by Go Rankers</p>
+        </div>
+
+    </section>
+    <!-- End Section 3 -->
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+</html>

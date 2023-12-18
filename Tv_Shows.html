@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="font-[Poppins] bg-black ">
+  <header class="bg-[#131313]">
+    <nav class="flex justify-between items-center w-[92%]  mx-auto">
+      <div>
+        <img class="w-16 max-sm:ml-2 cursor-pointer" src="/img/logo (2).png" alt="...">
+      </div>
+      <div class="max-sm:hidden md:hidden sm:hidden lg:flex items-center">
+        <div class="-ml-10">
+          <i class="fas fa-search ml-6 absolute mt-3 text-white"></i>
+          <input type="text" placeholder="Search titles here"
+            class="rounded-xl bg-black text-gray-400 border-none h-[3vw] w-[20vw] text-center text-xs outline-none" />
+        </div>
+      </div>
+      <div
+        class="nav-links duration-500 md:static absolute  md:min-h-fit min-h-[60vh] max-sm:-mt-8  left-0 top-[-100%] md:w-auto  w-full flex items-center">
+        <ul
+          class="flex md:flex-row flex-col md:items-center max-sm:w-full max-sm:border  max-sm:bg-black max-sm:text-white top-0  md:gap-[1vw] gap-4 text-gray-400 font-poppin text-xs space-x-6">
+          <a class="cursor-pointer max-sm:ml-6 max-sm:mt-3  ">Home</a>
+          <a class="cursor-pointer ">TV Shows</a>
+          <a class="cursor-pointer ">Live</a>
+          <a class="cursor-pointer ">Pedicob Streams</a>
+          <div class="max-sm:flex space-x-3">
+            <button
+              class="rounded-2xl border w-[95px] md:hidden   h-[45px] text-center text-black bg-transparent border-black max-sm:border-white max-sm:my-4 max-sm:text-white flex items-center justify-center">Sign
+              in</button>
+            <button class="px-6 py-3 max-sm:my-4 text-white md:hidden rounded-2xl bg-[#FF0207]">
+              Register
+            </button>
+          </div>
+        </ul>
+      </div>
+      <div class="md:flex max-sm:hidden sm:hidden items-center">
+        <div>
+          <img class="md:h-[10px]" src="/img/love 1.svg" alt="" />
+        </div>
+        <div class="md:ml-2 lg:ml-2">
+          <h1 class="text-white text-xs cursor-pointer">Watchlist</h1>
+        </div>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="sign_in.html"
+          class="rounded-2xl border w-[95px] max-sm:hidden sm-hidden  h-[45px] text-center text-white bg-transparent border-gray-400 flex items-center justify-center">Sign
+          in</a>
+        <button class="px-6 py-3 text-white max-sm:hidden sm-hidden rounded-2xl bg-[#FF0207]">
+          Register
+        </button>
+        <ion-icon onclick="onToggleMenu(this)" name="menu"
+          class="text-3xl cursor-pointer md:hidden fill-white"></ion-icon>
+      </div>
+  </header>
+
+  <!-- section 1 -->
+
+  <section class="bg-black">
+    <div class=" my-5 md:mx-24 max-sm:mx-5 flex space-x-1">
+      <h1 class="text-white">Home /</h1>
+      <h1 class="text-white">Tv Shows</h1>
+    </div>
+  </section>
+  <!-- End section 1 -->
+  <!-- section 2 -->
+
+  <section class="bg-[#131313]">
+    <div class="md:mx-24 max-sm:mx-5 ">
+      <h1 class="text-2xl text-white">
+        Pedicom Streams
+      </h1>
+      <h1 class=" text-xs text-gray-400 my-4 ">
+        Esse curso tem como objetivo de te dar os fundamentos da programação e entender um pouco mais sobre o web,
+        precisamos desse conhecimento para então nos <br>
+        tornarmos aptos a estudar as diversas linguagens e tecnologias que vamos encontrar como desenvolvedores e
+        desenvolvedoras web.
+      </h1>
+    </div>
+
+    <!-- start img gallery -->
+
+    <div class="flex flex-nowrap mb-6 mx-24 gap-8">
+      <div
+        class="relative group hover:bg-gradient-to-r hover:from-black hover:to-white  cursor-pointer hover:bg-opacity-50">
+        <img class="rounded-lg w-[60vw] h-[16vw]" src="/img/image 1.png" alt="" />
+        <div class="hidden group-hover:flex  absolute top-1/2 left-1/2 transform">
+          <img class="h-10 -ml-64 -mt-8 cursor-pointer" src="/img/btnPlay.svg" alt="Play Button" />
+          <div class="flex ml-96 -mt-14 flex-col">
+            <h1 class="text-4xl text-center text-white font-extrabold ml-2 mt-2 font-racing">
+              PEDICAB <br />TOUR
+            </h1>
+
+            <p class="text-[12px] text-white ml-2 mt-1">SEASONAL TOUR</p>
+            <div class="flex space-x-1 mt-6">
+              <img class="h-4" src="/img/Ellipse 3.svg" alt="" />
+              <p class="text-white text-[9px]">John Doe</p>
+              <p class="text-white text-[9px] px-10">30.5k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img class="h-[16vw] w-[31vw]" src="/img/image 2.png" alt="" />
+        <div
+          class="hidden group-hover:flex group-hover:flex-col items-center cursor-pointer justify-center absolute inset-0 transition-opacity">
+          <img class="h-10 mt-16" src="/img/btnPlay.svg" alt="Play Button" />
+
+          <h1 class="text-white text-[12px] font-bold mt-8 hover:mt-8 ml-3">
+            Pedicab Driver Vloge 13 - Aveneue Street......
+          </h1>
+          <div class="flex space-x-1 mt-2 ml-3">
+            <img class="h-4" src="/img/Ellipse 3.svg" alt="" />
+            <p class="text-white text-[9px]">John Doe</p>
+            <p class="text-white text-[9px] pl-[170px]">30.5k</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-nowrap mx-24 gap-8">
+      <div class="relative group">
+        <img class="h-[16vw] w-[31vw]" src="/img/image 2.png" alt="" />
+        <div
+          class="hidden group-hover:flex group-hover:flex-col items-center cursor-pointer justify-center absolute inset-0 transition-opacity">
+          <img class="h-10 mt-16" src="/img/btnPlay.svg" alt="Play Button" />
+
+          <h1 class="text-white text-[12px] font-bold mt-8 hover:mt-8 ml-3">
+            Pedicab Driver Vloge 13 - Aveneue Street......
+          </h1>
+          <div class="flex space-x-1 mt-2 ml-3">
+            <img class="h-4" src="/img/Ellipse 3.svg" alt="" />
+            <p class="text-white text-[9px]">John Doe</p>
+            <p class="text-white text-[9px] pl-[170px]">30.5k</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative group hover:bg-gradient-to-r hover:from-black hover:to-white  cursor-pointer hover:bg-opacity-50">
+        <img class="rounded-lg w-[60vw] h-[16vw]" src="/img/image 1.png" alt="" />
+        <div class="hidden group-hover:flex  absolute top-1/2 left-1/2 transform">
+          <img class="h-10 -ml-64 -mt-8 cursor-pointer" src="/img/btnPlay.svg" alt="Play Button" />
+          <div class="flex ml-96 -mt-14 flex-col">
+            <h1 class="text-4xl text-center text-white font-extrabold ml-2 mt-2 font-racing">
+              PEDICAB <br />TOUR
+            </h1>
+
+            <p class="text-[12px] text-white ml-2 mt-1">SEASONAL TOUR</p>
+            <div class="flex space-x-1 mt-6">
+              <img class="h-4" src="/img/Ellipse 3.svg" alt="" />
+              <p class="text-white text-[9px]">John Doe</p>
+              <p class="text-white text-[9px] px-10">30.5k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 max-sm:mx-5 md:mx-24 gap-4 mt-6">
+      <div class="relative group">
+        <img class="md:h-[16vw] md:w-[40vw] max-sm:w-[100%]" src="/img/image 3.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="md:h-[16vw] md:w-[29vw] max-sm:w[100%] max-smh-[15vh]" src="/img/image 4.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="md:h-[16vw] md:w-[29vw] max-sm:w[100%] max-smh-[15vh]" src="/img/image 4.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="md:h-[16vw] md:w-[29vw] max-sm:w[100%] max-smh-[15vh]" src="/img/image 4.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="md:h-[16vw] md:w-[29vw] max-sm:w[100%] max-smh-[15vh]" src="/img/image 4.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="md:h-[16vw] md:w-[29vw] max-sm:w[100%] max-smh-[15vh]" src="/img/image 4.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="md:h-[16vw] md:w-[29vw] max-sm:w[100%] max-smh-[15vh]" src="/img/image 4.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="md:h-[16vw] md:w-[29vw] max-sm:w[100%] max-smh-[15vh]" src="/img/image 4.png" alt="" />
+
+      </div>
+      <div class="relative group">
+        <img class="h-[16vw] max-sm:h-[30vh] md:w-[29vw] max-sm:w-[100%]" src="/img/same.png" alt="" />
+
+      </div>
+    </div>
+
+    <!-- end img gallery -->
+
+
+
+  </section>
+
+  <!-- End section 1 -->
+
+
+  <!-- Start Footer -->
+
+
+
+  <section class="bg-black">
+    <div class="flex md:flex-row sm:flex-col max-sm:flex-col md:mx-24">
+      <div class="flex flex-col max-sm:ml-5">
+        <img class="md:w-[8vw] w-[30vw] mt-16" src="/img/3c21decb-c927-41ee-8070-0bfd2a5ce6cc 2.png" alt="">
+        <p class="text-gray-400 text-xs mt-4">HTS is video streaming lorem ipsum dolor sit <br> amet,
+          consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna <br>
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p class="text-white font-bold text-sm md:mt-6 mt-6">Follow Us</p>
+        <div class="flex space-x-2 mb-24 max-sm:mb-12">
+          <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social01.svg" alt="">
+          <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social02.svg" alt="">
+          <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social03.svg" alt="">
+          <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social04.svg" alt="">
+          <img class="md:w-[3vw] w-[15vw] mt-6" src="/img/social05.svg" alt="">
+
+        </div>
+      </div>
+      <div class="flex flex-col max-sm:ml-5 md:mt-16 space-y-3 mb-10  md:ml-24">
+        <p class="text-white  text-md">Quick Links</p>
+        <p class="text-white  text-sm">About us</p>
+        <p class="text-white  text-sm">Contact us</p>
+        <p class="text-white  text-sm">Products</p>
+        <p class="text-white  text-sm">Login</p>
+        <p class="text-white  text-sm mb-24">Sign Up</p>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col  space-y-3 mb-10 md:mt-16 md:ml-16">
+          <p class="text-white  text-md">TV Show Categories +</p>
+          <p class="text-white  text-sm">Christian Show</p>
+          <p class="text-white  text-sm">Boxing Show</p>
+          <p class="text-white  text-sm">Football Show</p>
+          <p class="text-white  text-sm">All Islam</p>
+          <p class="text-white  text-sm">Comedy Show</p>
+          <p class="text-white  text-sm">Pop Show</p>
+          <p class="text-white  text-sm">Jewish Show</p>
+          <p class="text-white  text-sm mb-24">Bring 'em Home <br> Bail Bonds</p>
+        </div>
+        <div class="flex flex-col  mt-10 -ml-3 space-y-3 md:mb-12 md:mt-28 ">
+          <p class="text-white  text-sm">Hip Hop Show</p>
+          <p class="text-white  text-sm">Jazz Show</p>
+          <p class="text-white  text-sm">Fishing Show</p>
+          <p class="text-white  text-sm">Sports Show</p>
+          <p class="text-white  text-sm">Caribbean Show</p>
+          <p class="text-white  text-sm">Women of Wealth</p>
+          <p class="text-white  text-sm">Pedicab</p>
+          <p class="text-white  text-sm mb-16">Community <br> Affairs Show</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-lg bg-gradient-to-br md:mx-24 max-sm:mx-7  md:h-[13vw] md:w-[32vw] max-sm:h-[50vw]  from-pink-500     to-purple-900 mt-6 md:p-4">
+      <div class="flex flex-col max-sm:ml-4  space-y-4 ">
+        <h1 class="text-white text-sm font-poppin mt-1">Watch HTS Everywhere & Anytime Now</h1>
+        <p class="text-white text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> do
+          eiusmod tempor</p>
+        <button class="border bg-white text-sm text-black rounded-md md:h-[3.2vw] md:w-[14vw] w-[50vw] h-[10vw]">Get
+          Premium Access</button>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- End Section 2 -->
+  <!-- Section 3 -->
+  <section class="bg-[#ff0207] mt-5  max-sm:h-[20vw] ">
+    <div class="md:flex max-sm:justify-center md:justify-between max-sm:flex-col">
+      <p class="text-white md:ml-24 md:mt-8 max-sm:py-3   md:text-sm text-xs max-sm:text-center  ">HTS VIDEO STREAMING -
+        © 2020 All Rights
+        Reserved</p>
+      <p class="text-white md:mr-24 md:mt-8 max-sm:-mt-2 mb-8 max-sm:text-center md:text-sm text-xs">Website developed
+        by Go Rankers</p>
+    </div>
+
+  </section>
+  <!-- End Section 3 -->
+
+  <!-- End Footer -->
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[9%]')
+    }
+  </script>
+</body>
+
+</html>

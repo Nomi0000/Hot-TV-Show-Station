@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-xxx"
+      crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.js" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Racing+Sans+One&display=swap"
+      rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      /* Add this style to make the checkbox background white and the tick black when selected */
+      input[type="checkbox"]:checked {
+        background-color: white;
+        border-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-[#131313] h-[6vw]">
+      <div class="md:mx-24 flex justify-between">
+        <a href="/index.html cursur-pointer ">
+          <img
+          class="cursor-pointer w-[112px] h-[5vw] mr-6 p-2"
+          src="/img/logo (2).png"
+          alt="" />
+        </a>
+        <div class="flex items-center">
+          <div class="-ml-10">
+            <i class="fas fa-search ml-6 absolute mt-3 text-white"></i>
+            <input
+              type="text"
+              placeholder="Search titles here"
+              class="rounded-xl bg-black text-gray-400 border-none h-[3vw] w-[20vw] text-center text-xs outline-none" />
+          </div>
+        </div>
+        <ul
+          class="items-center hidden md:flex text-gray-400 font-poppin text-xs space-x-6">
+          <a class="cursor-pointer hover:text-white">Home</a>
+          <a href="/Tv_Shows.html" class="cursor-pointer hover:text-white">TV Shows</a>
+          <a href="/HTS_Live_Channel.html" class="cursor-pointer hover:text-white">Live</a>
+          <a class="cursor-pointer hover:text-white">Pedicob Streams</a>
+        </ul>
+
+        <div class="flex items-center">
+          <div>
+            <img class="h-[1.6vw]" src="/img/love 1.svg" alt="" />
+          </div>
+          <div class="ml-2">
+            <h1 class="text-white text-xs cursor-pointer">Watchlist</h1>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3">
+          <a class="rounded-2xl border w-[95px] h-[45px] text-center hover:bg-[#FF0207] hover:border-none text-white bg-transparent border-gray-400 flex items-center justify-center" href="/sign_in.html">
+            Sign in
+        </a>
+        
+          <a class="px-6 py-3 text-white rounded-2xl bg-[#FF0207]" href="/register.html">
+            Register
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    
+    <!-- Hero Section -->
+    <section class="w-[100%] bg-[url('img/overlay.png')] bg-center bg-cover">
+      <div class="flex mx-24 space-x-9">
+        <div class="flex flex-col mt-[8vw]">
+          <div class="flex flex-row space-x-4 text-gray-400">
+            <h4 class="text-sm hover:text-red-500 cursor-pointer">
+              Live Channel
+            </h4>
+            <h4 class="text-sm hover:text-red-500 cursor-pointer">
+              Pedicab Streams
+            </h4>
+            <h4 class="text-sm hover:text-red-500 cursor-pointer">Tv Shows</h4>
+          </div>
+          <h1 class="text-white text-[4.4vw] font-extrabold">
+            HTS Live Channel
+          </h1>
+          <p class="text-gray-400 text-clip overflow-hidden text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod <br />
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris
+          </p>
+          <p class="text-gray-400 text-clip overflow-hidden text-sm mt-7">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="flex flex-row space-x-5 mt-10">
+            <div
+              class="flex flex-row space-x-8 items-center justify-center bg-[#FF0207] rounded-lg w-[13vw] h-[3.5vw] cursor-pointer">
+              <h1 class="text-white font-semibold">Watch Now</h1>
+              <img class="h-3" src="/img/Vector.svg" alt="" />
+            </div>
+            <div
+              class="bg-transparent flex hover:bg-[#FF0207] hover:border-none items-center justify-center border border-gray-400 rounded-lg w-[13vw] h-[3.5vw]">
+              <h1
+                class="text-white font-semibold text-center my-auto cursor-pointer">
+                Add To Watchlist
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center mt-[8vw]">
+          <img
+            src="/img/coverFilm.svg"
+            class="h-16 block ml-64 absolute"
+            alt="" />
+          <img class="h-[26vw] w-[69vw]" src="/img/placeholder.png" alt="" />
+        </div>
+      </div>
+      <h1 class="text-white mt-40 ml-24">Recently Watched</h1>
+
+      <!-- cards -->
+
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 mt-10 mx-24">
+        <div class="flex opacity-70 bg-black rounded-xl w-[20.6vw] h-[11vw]">
+          <img class="p-3" src="/img/s1.png" alt="" />
+          <div class="flex flex-col mx-4">
+            <button
+              class="bg-[#BB00041E] text-red-500 border mt-3 text-xs rounded-lg w-[5vw] h-[2.2vw] border-red-500">
+              Tv Shows
+            </button>
+            <h1 class="text-white mt-4 text-sm">The Boxing Show</h1>
+            <p class="text-gray-400 text-xs mb-4">Episode 7</p>
+            <p class="text-gray-400 text-xs ml-14 mb-1">17:05:34</p>
+            <div
+              class="w-full bg-gray-300 rounded-full h-[3px] dark:bg-gray-700">
+              <div
+                class="bg-red-600 h-[3px] rounded-full"
+                style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex opacity-70 bg-black rounded-xl ml-2 w-[20.6vw] h-[11vw]">
+          <img class="p-3" src="/img/s2.svg" alt="" />
+          <div class="flex flex-col mx-4">
+            <button
+              class="bg-[#BB00041E] text-red-500 border mt-3 text-xs rounded-lg w-[5vw] h-[2.2vw] border-red-500">
+              Tv Shows
+            </button>
+            <h1 class="text-white mt-4 text-sm">The Boxing Show</h1>
+            <p class="text-gray-400 text-xs mb-4">Episode 7</p>
+            <p class="text-gray-400 text-xs ml-14 mb-1">17:05:34</p>
+            <div
+              class="w-full bg-gray-300 rounded-full h-[3px] dark:bg-gray-700">
+              <div
+                class="bg-red-600 h-[3px] rounded-full"
+                style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex opacity-70 bg-black rounded-xl ml-4 w-[20.6vw] h-[11vw]">
+          <img class="p-3" src="/img/s3.svg" alt="" />
+          <div class="flex flex-col mx-4">
+            <button
+              class="bg-[#BB00041E] text-red-500 border mt-3 text-xs rounded-lg w-[5vw] h-[2.2vw] border-red-500">
+              Tv Shows
+            </button>
+            <h1 class="text-white mt-4 text-sm">The Boxing Show</h1>
+            <p class="text-gray-400 text-xs mb-4">Episode 7</p>
+            <p class="text-gray-400 text-xs ml-14 mb-1">17:05:34</p>
+            <div
+              class="w-full bg-gray-300 rounded-full h-[3px] dark:bg-gray-700">
+              <div
+                class="bg-red-600 h-[3px] rounded-full"
+                style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex opacity-70 bg-black rounded-xl ml-5 w-[20.6vw] h-[11vw]">
+          <img class="p-3" src="/img/s4.svg" alt="" />
+          <div class="flex flex-col mx-4">
+            <button
+              class="bg-[#BB00041E] text-red-500 border mt-3 text-xs rounded-lg w-[5vw] h-[2.2vw] border-red-500">
+              Tv Shows
+            </button>
+            <h1 class="text-white mt-4 text-sm">The Boxing Show</h1>
+            <p class="text-gray-400 text-xs mb-4">Episode 7</p>
+            <p class="text-gray-400 text-xs ml-14 mb-1">17:05:34</p>
+            <div
+              class="w-full bg-gray-300 rounded-full h-[3px] dark:bg-gray-700">
+              <div
+                class="bg-red-600 h-[3px] rounded-full"
+                style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end card -->
+
+      <!-- Swiper -->
+      <div class="flex justify-center py-5 space-x-3">
+        <div>
+          <img class="h-[1.2vw]" src="/img/arrow 1.svg" alt="" />
+        </div>
+        <div>
+          <img class="h-[0.5vw] mt-[3.5px]" src="/img/dot.svg" alt="" />
+        </div>
+        <div>
+          <img class="h-[0.5vw] mt-[3.5px]" src="/img/dot.svg" alt="" />
+        </div>
+        <div>
+          <img class="h-[0.5vw] mt-[3.5px]" src="/img/dot 2.svg" alt="" />
+        </div>
+        <div>
+          <img class="h-[1.2vw]" src="/img/arrow 2.svg" alt="" />
+        </div>
+      </div>
+      <!-- End Swiper -->
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Section 2 -->
+    <div class="bg-black bg-opacity-90 font-Poppins mx-auto">
+      <div class="max-w-1820 min-[1820px]:px-28 mx-auto pt-20 pb-40">
+        <div class="flex justify-between text-white pl-14 pr-2 pb-20">
+          <div>
+  <h1 class="text-4xl font-black">Pedicab Streams</h1>
+          </div>
+                    <a class="" href="">
+            <div class="flex gap-2 md:pr-10">
+              <p class="font-light">view more</p>
+              <i
+                class=" text-xs fa-solid fa-chevron-right bg-white text-black px-[9px] py-[1px] pt-1 font-bold rounded-full"
+              ></i>
+            </div>
+          </a>
+        </div>
+        <div
+          class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10"
+        >
+        <div class="lg:col-span-2 md:col-span-2 col-span-1">
+          <div class="relative cursor-pointer">
+            <img
+              class="rounded-2xl h-[384px] w-full object-cover"
+              src="img/image 1.png"
+              alt=""
+            />
+
+            <div
+              class="absolute top-0 left-0 right-96 opacity-0 hover:opacity-100 rounded-2xl w-full h-full transition-opacity bg-gradient-to-l from-black to-transparent"
+            >
+              <img
+                class="absolute top-1/2 left-[34%] transform -translate-x-1/2 -translate-y-1/2"
+                src="img/btnPlay.svg"
+                alt=""
+              />
+              <div
+                class="text-white absolute top-1/2 right-[1%] transform -translate-x-1/2 -translate-y-1/2"
+              >
+                <h1
+                  class="text-center text-7xl text-opacity-78 text-shadow-md font-Racing text-73"
+                >
+                  PEDICAB <br />TOUR
+                </h1>
+                <p class="text-center font-Poppins font-semibold text-lg">
+                  SEASONAL TOUR
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="relative cursor-pointer">
+            <img
+              class="rounded-2xl w-full h-[384px] object-cover"
+              src="img/image 2.png"
+              alt=""
+            />
+            <div
+              class="absolute top-0 left-0 right-96 opacity-0 hover:opacity-100 rounded-2xl w-full h-full transition-opacity bg-gradient-to-t from-black to-transparent"
+            >
+              <img
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                src="img/btnPlay.svg"
+                alt=""
+              />
+              <div class="text-white absolute bottom-[6%] right-[15%] ml-4">
+                <h1 class="text-lg text-white font-Poppins font-bold">
+                  Pedicab Driver Vloge 13 - Aveneue Street......
+                </h1>
+                <div class="flex justify-between mt-5">
+                  <div class="flex gap-2">
+                    <img
+                      class="h-7 rounded-full"
+                      src="images/adq (4).png"
+                      alt="profile picture"
+                    />
+                    <p class="mt-0.5">John Doe</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <p>36.2k</p>
+                    <i class="fa-regular fa-eye mt-0.5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative cursor-pointer">
+            <img
+              class="w-full h-[384px] object-cover rounded-2xl"
+              src="images/adq (1).png"
+              alt=""
+            />
+            <div
+              class="absolute top-0 left-0 right-96 opacity-0 hover:opacity-100 rounded-2xl w-full h-full transition-opacity bg-gradient-to-t from-black to-transparent"
+            >
+              <img
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                src="images/btnPlay.png"
+                alt=""
+              />
+              <div class="text-white absolute bottom-[6%] right-[15%] ml-4">
+                <h1 class="text-lg text-white font-Poppins font-bold">
+                  Pedicab Driver Vloge 13 - Aveneue Street......
+                </h1>
+                <div class="flex justify-between mt-5">
+                  <div class="flex gap-2">
+                    <img
+                      class="h-7 rounded-full"
+                      src="images/adq (1).png"
+                      alt="profile picture"
+                    />
+                    <p class="mt-0.5">John Doe</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <p>36.2k</p>
+                    <i class="fa-regular fa-eye mt-0.5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative cursor-pointer">
+            <img
+              class="w-full h-[384px] object-cover rounded-2xl"
+              src="images/adq (2).png"
+              alt=""
+            />
+            <div
+              class="absolute top-0 left-0 right-96 opacity-0 hover:opacity-100 rounded-2xl w-full h-full transition-opacity bg-gradient-to-t from-black to-transparent"
+            >
+              <img
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                src="images/btnPlay.png"
+                alt=""
+              />
+              <div class="text-white absolute bottom-[6%] right-[15%] ml-4">
+                <h1 class="text-lg text-white font-Poppins font-bold">
+                  Pedicab Driver Vloge 13 - Aveneue Street......
+                </h1>
+                <div class="flex justify-between mt-5">
+                  <div class="flex gap-2">
+                    <img
+                      class="h-7 rounded-full"
+                      src="images/adq (2).png"
+                      alt="profile picture"
+                    />
+                    <p class="mt-0.5">John Doe</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <p>36.2k</p>
+                    <i class="fa-regular fa-eye mt-0.5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative cursor-pointer">
+            <img
+              class="w-full h-[384px] object-cover rounded-2xl"
+              src="images/adq (3).png"
+              alt=""
+            />
+            <div
+              class="absolute top-0 left-0 right-96 opacity-0 hover:opacity-100 rounded-2xl w-full h-full transition-opacity bg-gradient-to-t from-black to-transparent"
+            >
+              <img
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                src="images/btnPlay.png"
+                alt=""
+              />
+              <div class="text-white absolute bottom-[6%] right-[15%] ml-4">
+                <h1 class="text-lg text-white font-Poppins font-bold">
+                  Pedicab Driver Vloge 13 - Aveneue Street......
+                </h1>
+                <div class="flex justify-between mt-5">
+                  <div class="flex gap-2">
+                    <img
+                      class="h-7 rounded-full"
+                      src="images/adq (3).png"
+                      alt="profile picture"
+                    />
+                    <p class="mt-0.5">John Doe</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <p>36.2k</p>
+                    <i class="fa-regular fa-eye mt-0.5"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!-- End Section 2 -->
+
+    <!-- Section 3 -->
+    <section class="bg-black h-[47vw]">
+      <div class="flex justify-between py-10 px-24">
+        <div>
+          <h1 class="text-2xl font-poppin text-white">Recommended Tv Shows</h1>
+          <p class="text-gray-500 text-sm mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod <br />
+            tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+        <div class="flex gap-2 mt-8">
+          <h1 class="text-white text-sm">view more</h1>
+          <img class="h-[1vw] mt-[6px]" src="/img/arrow 1.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- IMG SECTION -->
+
+      <div class="grid grid-cols-5 gap-4 mx-24 my-10">
+        <div class="group hover:bg-white rounded-xl">
+          <img src="/img/img1.png" alt="" class="pt-2 px-2" />
+
+          <div class="hidden group-hover:block p-2">
+            <h1 class="font-poppin font-bold">4400</h1>
+            <p class="text-xs text-red-600 font-poppin mt-2">Comedy</p>
+            <div class="flex text-xs mt-3 ">
+              <p>2019</p>
+              
+                <p class="ml-4">120 Episodes</p>
+               
+            </div>
+          </div>
+        </div>
+        <div class="group hover:bg-white rounded-xl">
+          <img src="/img/img2.png" alt="" class="pt-2 px-2" />
+
+          <div class="hidden group-hover:block p-2">
+            <h1 class="font-poppin font-bold">The After Party</h1>
+            <p class="text-xs text-red-600 font-poppin mt-2">Comedy</p>
+            <div class="flex text-xs mt-3 ">
+              <p>2019</p>
+              
+                <p class="ml-4">120 Episodes</p>
+               
+            </div>
+          </div>
+        </div>
+        <div class="group hover:bg-white rounded-xl">
+          <img src="/img/img3.png" alt="" class="pt-2 px-2" />
+
+          <div class="hidden group-hover:block p-2">
+            <h1 class="font-poppin font-bold">BridGerton</h1>
+            <p class="text-xs text-red-600 font-poppin mt-2">Comedy</p>
+            <div class="flex text-xs mt-3 ">
+              <p>2019</p>
+              
+                <p class="ml-4">120 Episodes</p>
+               
+            </div>
+          </div>
+        </div>
+        <div class="group hover:bg-white rounded-xl">
+          <img src="/img/img4.png" alt="" class="pt-2 px-2" />
+
+          <div class="hidden group-hover:block p-2">
+            <h1 class="font-poppin font-bold">Cloak Dagger</h1>
+            <p class="text-xs text-red-600 font-poppin mt-2">Comedy</p>
+            <div class="flex text-xs mt-3 ">
+              <p>2019</p>
+              
+                <p class="ml-4">120 Episodes</p>
+               
+            </div>
+          </div>
+        </div>
+        <div class="group hover:bg-white rounded-xl">
+          <img src="/img/img5.png" alt="" class="pt-2 px-2" />
+
+          <div class="hidden group-hover:block p-2">
+            <h1 class="font-poppin font-bold">BigBang Theory</h1>
+            <p class="text-xs text-red-600 font-poppin mt-2">Comedy</p>
+            <div class="flex text-xs mt-3 ">
+              <p>2019</p>
+              
+                <p class="ml-4">120 Episodes</p>
+               
+            </div>
+          </div>
+        </div>
+      
+      <!-- END IMG SECTION -->
+    </section>
+    <!-- End Section 3 -->
+
+
+
+    <!-- Section 6 -->
+
+    <Section class="bg-black ">
+      <div class=" flex flex-col space-y-6 mb-10  mx-24">
+        <h1 class="text-white mt-16 font-poppin text-center text-2xl">IT’S EASY TO GET STARTED</h1>
+        <p class="text-gray-400 text-xs text-center">choose a plan tailored to your needs</p>
+        <button class="text-white rounded-2xl font-poppin border hover:bg-[#FF0207] hover:border-none   border-white w-[7vw] mx-auto text-sm h-[3vw]">Monthly</button>
+      </div>
+      <div class="grid grid-cols-3 mx-24 gap-4">
+        <!-- Section 1 -->
+        <div class="flex flex-col h-[40vw] mb-40 hover:border-4 hover:bg-neutral-900 hover:border-red-600  rounded-xl bg-gray-800">
+          <p class="text-xs ml-5 text-gray-400 mt-6">Basic</p>
+          <div class="flex ml-5 space-x-2">
+            <h1 class="text-white font-poppin">$7.99</h1>
+            <p class="text-gray-400 text-xs mt-1">/ month</p>
+          </div>
+          <hr class="w-[20vw] ml-5 mt-2">
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-1" type="checkbox" value=""
+                class="w-4 h-4 mt-5 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-1"
+                class="ms-2 text-sm font-medium text-gray-400 mt-8 dark:text-gray-300">Ad-supported, all but a few movies
+                and TV <br> shows available, unlimited mobile games</label>
+            </div>
+          </div>
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-2" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-2"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Watch on 2 supported devices at a
+                time</label>
+            </div>
+          </div>
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-3" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-3"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Watch in Full HD</label>
+            </div>
+          </div>
+          <button
+            class="text-white bg-gray-800 border border-gray-400  rounded-xl hover:border-none hover:bg-[#FF0207] text-sm ml-5 mt-8 w-[8vw] h-[3vw]">Get Started</button>
+        </div>
+        <!-- Section 2 -->
+        <div class="flex flex-col h-[40vw] mb-40 hover:border-4 hover:bg-neutral-900 hover:border-red-600  rounded-xl bg-gray-800">
+          <p class="text-xs ml-5 text-gray-400 mt-6">Basic</p>
+          <div class="flex ml-5 space-x-2">
+            <h1 class="text-white font-poppin">$7.99</h1>
+            <p class="text-gray-400 text-xs mt-1">/ month</p>
+          </div>
+          <hr class="w-[20vw] ml-5 mt-2">
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-1" type="checkbox" value=""
+                class="w-4 h-4 mt-8 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-1"
+                class="ms-2 text-sm font-medium text-gray-400 mt-8 dark:text-gray-300">
+                Watch on 2 supported devices at a time</label>
+            </div>
+          </div>
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-2" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-2"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Unlimited ad-free movies, TV shows, and mobile games</label>
+            </div>
+          </div>
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-3" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-3"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Download on 2 supported devices at a time</label>
+            </div>
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-3" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-3"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300"> Watch in Full HD</label>
+            </div>
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-3" type="checkbox" value=""
+                class="w-4 h-4 mt-2 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-3"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Option to add 1 extra member who doesn't live with you</label>
+            </div>
+          </div>
+          <button
+            class="text-white bg-gray-800 border border-gray-400 rounded-xl text-sm ml-5 mt-8 w-[8vw] hover:border-none hover:bg-[#FF0207] h-[3vw]">Get Started</button>
+        </div>
+        <!-- Section 3 -->
+        <div class="flex flex-col h-[40vw] mb-40 hover:border-4 hover:bg-neutral-900 hover:border-red-600  rounded-xl bg-gray-800">
+          <p class="text-xs ml-5 text-gray-400 mt-6">Basic</p>
+          <div class="flex ml-5 space-x-2">
+            <h1 class="text-white font-poppin">$7.99</h1>
+            <p class="text-gray-400 text-xs mt-1">/ month</p>
+          </div>
+          <hr class="w-[20vw] ml-5 mt-2">
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-1" type="checkbox" value=""
+                class="w-4 h-4 mt-8 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-1"
+                class="ms-2 text-sm font-medium text-gray-400 mt-8 dark:text-gray-300">
+                Watch on 2 supported devices at a time</label>
+            </div>
+          </div>
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-2" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-2"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Unlimited ad-free movies, TV shows, and mobile games</label>
+            </div>
+          </div>
+          <div class="ml-5">
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-3" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-3"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Download on 2 supported devices at a time</label>
+            </div>
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-3" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-3"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300"> Watch in Full HD</label>
+            </div>
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-3" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-3"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Download on 2 supported devices at a time</label>
+            </div>
+            <div class="flex items-center ">
+              <input checked id="checked-checkbox-3" type="checkbox" value=""
+                class="w-4 h-4 mt-6 text-white bg-black border-black rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="checked-checkbox-3"
+                class="ms-2 text-sm font-medium text-gray-400 mt-6 dark:text-gray-300">Netflix spatial audio</label>
+            </div>
+          </div>
+          <button
+            class="text-white bg-gray-800 border border-gray-400 rounded-xl hover:border-none text-sm hover:bg-[#FF0207] ml-5 mt-8 w-[8vw] h-[3vw]">Get Started</button>
+        </div>
+        
+    </Section>
+    <!-- End Section 6 -->
+    <!-- Section 7 -->
+    <section class="bg-gray-900">
+      <div class="flex flex-col justify-center mx-24 items-center space-y-4">
+        <div class="flex space-x-24  mt-16">
+          <img class="h-[1.7vw] cursor-pointer  " src="/img/Group 7.svg" alt="">
+          <img class="h-[1.3vw] cursor-pointer " src="/img/Group 8.svg" alt="">
+          <img class="h-[1.7vw] cursor-pointer " src="/img/Group 9.svg" alt="">
+          <img class="h-[1.7vw] cursor-pointer " src="/img/Group 10.svg" alt="">
+        </div>
+        <div class="flex space-x-24">
+          <img class="h-[1.4vw] cursor-pointer  mt-10 mb-10 " src="/img/Group 11.svg" alt="">
+          <img class="h-[2.5vw] cursor-pointer  mt-8 mb-10" src="/img/Group 12.svg" alt="">
+          <img class="h-[2.5vw] cursor-pointer  mt-8 mb-10" src="/img/Group 13.svg" alt="">
+        </div>
+        
+        <div></div>
+      </div>
+
+    </section>
+    <!-- End Section 7 -->
+
+    <!-- Section 7 -->
+    <section class="bg-black">
+      <div class="flex flex-row  mx-24">
+        <div class="flex flex-col">
+          <img class="w-[8vw] mt-16" src="/img/3c21decb-c927-41ee-8070-0bfd2a5ce6cc 2.png" alt="">
+          <p class="text-gray-400 text-xs mt-4">HTS is video streaming lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim <br> ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p class="text-white font-bold text-sm mt-6">Follow Us</p>
+          <div class="flex space-x-2 mb-24">
+            <img class="w-[3vw] cursor-pointer rounded-full hover:border-none hover:outline-none  hover:bg-blue-400 mt-6" src="/img/social01.svg" alt="">
+            <img class="w-[3vw] cursor-pointer rounded-full hover:border-none   mt-6" src="/img/social02.svg" alt="">
+            <img class="w-[3vw] cursor-pointer rounded-full hover:border-none  hover:bg-blue-400 mt-6" src="/img/social03.svg" alt="">
+            <img class="w-[3vw] cursor-pointer rounded-full hover:border-none  hover:bg-blue-900 mt-6" src="/img/social04.svg" alt="">
+            <img class="w-[3vw] cursor-pointer rounded-full hover:border-none  hover:bg-pink-400 mt-6" src="/img/social05.svg" alt="">
+          </div>
+        </div>
+        <div class="flex flex-col space-y-3 mt-16 ml-24">
+          <p class="text-white  text-sm">Quick Links</p>
+          <p class="text-white  text-sm">About us</p>
+          <p class="text-white  text-sm">Contact us</p>
+          <p class="text-white  text-sm">Products</p>
+          <p class="text-white  text-sm">Login</p>
+          <p class="text-white  text-sm mb-24">Sign Up</p>
+        </div>
+        <div class="flex flex-col space-y-3 mt-16 ml-24">
+          <p class="text-white  text-sm">TV Show Categories +</p>
+          <p class="text-white  text-sm">Christian Show</p>
+          <p class="text-white  text-sm">Boxing Show</p>
+          <p class="text-white  text-sm">Football Show</p>
+          <p class="text-white  text-sm">All Islam</p>
+          <p class="text-white  text-sm">Comedy Show</p>
+          <p class="text-white  text-sm">Pop Show</p>
+          <p class="text-white  text-sm">Jewish Show</p>
+          <p class="text-white  text-sm mb-24">Bring 'em Home <br> Bail Bonds</p>
+        </div>
+        <div class="flex flex-col space-y-3 mt-24 -ml-3">
+          <p class="text-white  text-sm">Hip Hop Show</p>
+          <p class="text-white  text-sm">Jazz Show</p>
+          <p class="text-white  text-sm">Fishing Show</p>
+          <p class="text-white  text-sm">Sports Show</p>
+          <p class="text-white  text-sm">Caribbean Show</p>
+          <p class="text-white  text-sm">Women of Wealth</p>
+          <p class="text-white  text-sm">Pedicab</p>
+          <p class="text-white  text-sm mb-24">Community <br> Affairs Show</p>
+        </div>
+        <div class="rounded-lg bg-gradient-to-br h-[17vw] ml-10 from-pink-500  mt-36 mb-24  to-purple-900 p-4">
+          <div class="flex flex-col   space-y-4 my-6">
+            <h1 class="text-white text-sm font-poppin">Watch HTS Everywhere & <br> Anytime Now</h1>
+            <p class="text-gray-400 text-xs">Lorem ipsum dolor sit amet, consectetur <br>  adipiscing elit, sed do eiusmod tempor</p>
+            <button class="border bg-white text-sm text-black rounded-xl h-[3.2vw] w-[12vw]">Get Premium Access</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Section 7 -->
+    <!-- Section 8 -->
+    <section class="bg-[#BB0004] ">
+      <div class="flex justify-between">
+        <p class="text-white ml-24 mt-8 mb-8 text-sm">HTS VIDEO STREAMING  -   © 2020 All Rights Reserved</p>
+        <p class="text-white mr-24 mt-8 mb-8 text-sm">Website developed by Go Rankers</p>
+      </div>
+
+    </section>
+    <!-- End Section 8 -->
+
+  </body>
+</html>
